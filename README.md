@@ -1,4 +1,4 @@
-# Loan Approval & Default Prediction
+# Loan Default Prediction
 
 ## Project Overview
 
