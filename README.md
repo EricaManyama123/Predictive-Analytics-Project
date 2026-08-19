@@ -1,8 +1,8 @@
-# Loan Approval & Default Prediction
+# Loan Default Prediction
 
 ## Project Overview
 
-This project aims to develop a machine learning solution for loan approval and default prediction.
+This project aims to develop a machine learning solution for loan default prediction.
 
 The project will use historical loan and customer data to identify patterns that can help predict loan outcomes and assess the risk of loan default.
 
