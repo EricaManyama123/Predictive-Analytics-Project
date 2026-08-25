@@ -11,7 +11,7 @@ The project will cover the different stages of a machine learning project, from 
 ---
 
 ## 1. Business & Problem Understanding
-
+Banks receive many loan applications and need to determine whether applications should be approved or rejected.
 The project will begin by understanding the loan approval process and clearly defining the problem that the machine learning model is expected to solve.
 
 The main question will be:
