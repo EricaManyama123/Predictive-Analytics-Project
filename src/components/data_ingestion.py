@@ -5,7 +5,7 @@ from src.exception import CustomException
 
 def load_raw_data(path: str) -> pd.DataFrame:
     try:
-        logging.info("Starting data ingestion for Customer Churn dataset")
+        logging.info("Starting data ingestion for loan approval prediction dataset")
         df = pd.read_csv(path)
         logging.info(f"Loaded {df.shape[0]} rows and {df.shape[1]} columns")
         return df
