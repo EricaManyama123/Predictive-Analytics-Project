@@ -12,13 +12,8 @@ The project will cover the different stages of a machine learning project, from 
 
 
 ## 1. Business & Problem Understanding
-<<<<<<< HEAD
-Banks receive many loan applications and need to determine whether applications should be approved or rejected.
-The project will begin by understanding the loan approval process and clearly defining the problem that the machine learning model is expected to solve.
-=======
 
 ### Business Context
->>>>>>> 2f756fc (Update project README)
 
 Loan approval is an important part of the banking process. When a person applies for a loan, the bank has to decide whether the application should be approved or rejected based on the information available about the applicant.
 
