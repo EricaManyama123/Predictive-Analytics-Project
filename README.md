@@ -37,21 +37,6 @@ Along with making predictions, I also want to understand which factors in the da
 
 This gives the project a practical purpose: using data to support the understanding and prediction of loan approval decisions.
 
-## 2. Data Collection & Understanding
-
-Once the dataset is obtained, I will first explore it to understand what information is available before making any changes.
-
-I will look at:
-
-* The number of rows and columns
-* What each feature represents
-* Numerical and categorical variables
-* The target variable
-* Missing values
-* Duplicate records
-* The distribution of approved and rejected applications
-
-The goal of this stage is to become familiar with the dataset and identify any issues that may need to be addressed.
 
 ---
 ## 2. Data Collection & Understanding
