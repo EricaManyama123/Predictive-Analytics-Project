@@ -4,25 +4,43 @@
 
 This project aims to use machine learning to predict whether a loan application is likely to be **approved or rejected**.
 
-The project will use information about loan applicants, such as their income, credit history, loan amount, employment status, and other relevant details, to identify patterns that may influence loan approval decisions.
+The project will use financial and personal information about loan applicants, such as their income, credit history, loan amount, employment status, and other relevant details, to identify patterns that may influence loan approval preictions.
 
 The project will cover the different stages of a machine learning project, from understanding the problem and preparing the data to building, evaluating, and eventually deploying the model.
 
 ---
 
+
 ## 1. Business & Problem Understanding
+<<<<<<< HEAD
 Banks receive many loan applications and need to determine whether applications should be approved or rejected.
 The project will begin by understanding the loan approval process and clearly defining the problem that the machine learning model is expected to solve.
+=======
 
-The main question will be:
+### Business Context
+>>>>>>> 2f756fc (Update project README)
 
-> **Can machine learning be used to predict whether a loan application will be approved or rejected?**
+Loan approval is an important part of the banking process. When a person applies for a loan, the bank has to decide whether the application should be approved or rejected based on the information available about the applicant.
 
-I will also look at the different factors that may influence a bank's decision, such as the applicant's income, credit history, loan amount, employment status, and other available information.
+Making this decision involves looking at different factors such as the applicant's income, credit score, education, employment status, loan amount, and financial assets.
 
-This stage will help establish a clear connection between the machine learning problem and the real-world financial problem.
+### Problem Statement
 
----
+In this project, I want to investigate whether the information available about a loan applicant can be used to predict the outcome of their application.
+
+The main question I am trying to answer is:
+
+> **Can machine learning predict whether a loan application will be approved or rejected?**
+
+This is a classification problem because the model will predict one of two outcomes: **Approved** or **Rejected**.
+
+### Project Objective
+
+The main objective is to build a machine learning model that can learn from previous loan applications and use the information about a new applicant to predict their likely loan approval status.
+
+Along with making predictions, I also want to understand which factors in the dataset appear to be important when determining the loan outcome.
+
+This gives the project a practical purpose: using data to support the understanding and prediction of loan approval decisions.
 
 ## 2. Data Collection & Understanding
 
@@ -41,6 +59,38 @@ I will look at:
 The goal of this stage is to become familiar with the dataset and identify any issues that may need to be addressed.
 
 ---
+## 2. Data Collection & Understanding
+
+The dataset used for this project is `loan_approval_dataset.xls`, which I added to the `data` folder of the project. It contains **4,269 loan application records and 13 columns**.
+
+I started the data understanding stage by loading the dataset using Python and pandas and checking the first few records to make sure that the data was being read correctly.
+
+### Dataset Features
+
+The dataset contains 13 columns describing the applicant, their financial situation, and the loan application.
+
+| Column | Simple description | Example |
+|---|---|---|
+| `loan_id` | Unique ID assigned to each loan application. | Application `1` |
+| `no_of_dependents` | Number of people financially dependent on the applicant. | Two children or family members |
+| `education` | Applicant's education level. | Graduate |
+| `self_employed` | Shows whether the applicant is self-employed. | Yes /No |
+| `income_annum` | Applicant's total income in one year. | Yearly salary or business income |
+| `loan_amount` | Amount of money the applicant wants to borrow. | Money requested to buy a house |
+| `loan_term` | Length of time the applicant has to repay the loan. | 10 years |
+| `cibil_score` | Credit score that reflects the applicant's credit history. | A score of 750 |
+| `residential_assets_value` | Value of residential property owned by the applicant. | A house, apartment, or residential land |
+| `commercial_assets_value` | Value of commercial or business property owned by the applicant. | A shop, office, or business building |
+| `luxury_assets_value` | Value of high-value personal assets owned by the applicant. | A luxury car or other expensive vehicle |
+| `bank_asset_value` | Value of financial assets associated with the applicant's bank relationship. | Savings or other money held with the bank |
+| `loan_status` | The final outcome of the loan application and the target we want to predict. | Approved or Rejected |
+
+The `loan_status` column will be used as the target variable because it contains the outcome of the loan application: **Approved** or **Rejected**.
+
+Next, I will examine the structure and quality of the dataset by checking the data types, missing values, duplicate records, and the distribution of loan approval outcomes.
+
+The purpose of this stage is to understand the dataset before making any changes or starting the modelling process.
+
 
 ## 3. Data Cleaning & Preparation
 
